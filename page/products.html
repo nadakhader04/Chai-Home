@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | chai Home</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body">
+    
+    <nav>
+        <div class="title"><a href="index.html"><h1>CHAI HOME</h1></a></div>
+
+        <ul>
+            <div class="li">
+                <li class=""><a href="/index.html">Home</a></li>
+                <li class=""><a href="/page/products.html">Shop</a></li>
+                <li class=""><a href="/page/payment-card.html"><i class="fa-regular fa-credit-card"></i> Payment Card</a></li>
+                <li class=""><a href="/page/ssignUp.html"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+                <li class="cartLogo"><i class="fa-solid fa-cart-shopping"></i> <span class="counter"> 0</span></li>
+                <li class="light"><i class="fa-regular fa-sun"></i></li>
+                <li class="dark"><i class="fa-solid fa-moon"></i></li>
+            </div>
+            
+        </ul>
+    </nav>
+
+    <div class="active mycart">
+        <div class="closeshopping">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <h1>your cart</h1>
+        <ul class="listCart">Add to cart</ul>
+
+        <button class="buyBtn" onclick="location.href='payment-card.html'">BUY <div class="total">0</div>₪</button>
+
+    </div>
+    
+    
+    
+    <div class="header-of-right">
+        <div class="icons">
+            <i id="bar_" class="fa-solid fa-bars" onclick="showHeader()"></i>
+            <i id="serch_" class="fa-solid fa-magnifying-glass"></i>
+            <i id="filter_" class="fa-solid fa-filter filter"></i>
+            <i id="mycard_" class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="bars">
+            <div class="searchAll">
+                <button class="Search1"><i class="fa-solid fa-magnifying-glass" onclick="serchOfProduct()"></i></button>
+                <input class="serch" type="text" placeholder="Search">
+    
+            </div>
+            
+            <div class="top-section">
+                <button>Filter <i id="" class="fa-solid fa-filter filter"></i></button>
+            </div>
+    
+            <form class="filter-option">
+                <label><input id="Artistic" type="checkbox" onclick="check()"> Artistic paintings</label>
+                <label><input id="candles" type="checkbox" onclick="check()"> Candles</label>
+                <label><input id="cups" type="checkbox" onclick="check()"> Cups</label>
+                <label><input id="plates" type="checkbox" onclick="check()"> Plates</label>
+                <label><input id="vases" type="checkbox" onclick="check()"> Vases</label>
+            </form>
+
+
+
+
+            <div class="cart">
+                <button id="cartLogoMain">My Card <i class="fa-solid fa-cart-shopping"></i> <span class="counter"> 0</span></button>
+                
+            </div>
+
+
+        </div>
+    </div>
+    
+    <div class="card"> </div>
+
+    
+    
+    <script src="/page/products.js"></script> 
+    <!-- <script src="/main.js"></script>    -->
+</body>
+</html>

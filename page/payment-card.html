@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Card</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav>
+        <div class="title"><a href="index.html"><h1>CHAI HOME</h1></a></div>
+
+        <ul>
+            <div class="li">
+                <li class=""><a href="/index.html">Home</a></li>
+                <li class=""><a href="/page/products.html">Shop</a></li>
+                <li class=""><a href="/page/payment-card.html"><i class="fa-regular fa-credit-card"></i> Payment Card</a></li>
+                <li class=""><a href="/page/ssignUp.html"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+                <li class="cartLogo"><i class="fa-solid fa-cart-shopping"></i> <span class="counter"> 0</span></li>
+                <li class="light"><i class="fa-regular fa-sun"></i></li>
+                <li class="dark"><i class="fa-solid fa-moon"></i></li>
+            </div>
+            
+        </ul>
+    </nav>
+
+
+
+    
+    <div class="active mycart" id="mycart">
+        <div class="closeshopping">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    
+        <h1>Your Cart</h1>
+        <ul class="listCart">Add to cart</ul>
+    
+        <button class="buyBtn" onclick="location.href='payment-card.html'">BUY <div class="total">0</div>₪</button>
+    </div>
+    
+
+
+
+    <div class="payment">
+        <h1>Payment Details</h1>
+        <div class="mid">
+            <div class="imag">
+                <img src="../image/visz.jpg" alt="Card Image">
+            </div>
+            <br>
+            <form class="details" id="details">
+                <div>
+                    <label for="name">Name on Card</label>
+                    <input id="name" type="text" placeholder="Full Name" required>
+                    <div class="error"></div> 
+                    
+                </div>
+                
+                <div>
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="4000 0000 0000 0000" maxlength="19" required>
+                    <div class="error"></div> 
+                    
+                </div>
+                
+                <div>
+                    <label for="valid">Valid Through</label>
+                    <input type="text" id="valid" placeholder="MM/YY" required>
+                    <div class="error"></div> 
+                    
+                </div>
+               
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" type="text" placeholder="XXX" maxlength="3" required>
+                    <div class="error"></div> 
+                    
+                </div>
+                
+                <input type="submit" id="pay" value="PAY">
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="/page/payment.js"></script>
+</body>
+</html>

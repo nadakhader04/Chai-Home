@@ -1,0 +1,54 @@
+*{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.signUp{
+    text-align: center;
+    height: auto;
+    width: 50%;
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #f5f5f5;
+    box-shadow: 5px 6px 5px 6px silver;
+    padding: 2rem;
+    color: inherit;
+}
+
+.SBox div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+input{
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 5px 3px 4px silver;
+    text-align: center;
+    justify-content: center;
+}
+
+label{
+    font-size: 1.3rem;
+    text-align: center;
+    color: inherit;
+}
+
+.join{
+    margin-top: 2rem;
+    background-color: rgb(30, 245, 30);
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 2rem;
+    cursor: pointer;
+}
+.join:hover{
+    transform: scale(1.1) ;
+    transition: 1s ease;
+}

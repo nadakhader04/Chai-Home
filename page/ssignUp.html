@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log In</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="title"><a href="index.html"><h1>CHAI HOME</h1></a></div>
+
+        <ul>
+            <div class="li">
+                <li class=""><a href="/index.html">Home</a></li>
+                <li class=""><a href="/page/products.html">Shop</a></li>
+                <li class=""><a href="/page/payment-card.html"><i class="fa-regular fa-credit-card"></i> Payment Card</a></li>
+                <li class=""><a href="/page/ssignUp.html"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+                <li class="cartLogo"><i class="fa-solid fa-cart-shopping"></i> <span class="counter"> 0</span></li>
+                <li class="light"><i class="fa-regular fa-sun"></i></li>
+                <li class="dark"><i class="fa-solid fa-moon"></i></li>
+            </div>
+            
+        </ul>
+    </nav>
+
+        
+
+    <div class="signUp">
+        <form class="SBox" id="form" action="/">
+            <h1 class="title">Creat Accont</h1>
+
+            <div class="inputcontrol">
+                <label>name</label>
+                <input id="name_" class="SInput" placeholder="Full name">
+                <div class="error"></div>
+                <div class="done"></div>
+            </div>
+            <br>
+            <div class="inputcontrol">
+                <label for="email">Emial</label>
+                <input type="text" id="email" class="SInput" placeholder="not join latter">
+                <div class="error"></div>
+                <div class="done"></div>
+            </div>
+            <br>
+            <div class="inputcontrol">
+                <label for="username" class="label">User Name</label>
+                <input class="SInput" placeholder="Just for you" id="username">
+                <div class="error"></div>
+                <div class="done"></div>
+            </div>
+            <br>
+            <div class="inputcontrol">
+                <label for="password">Password</label>
+                <input type="password" class="SInput" id="password" placeholder="Creat hart password">
+                <div class="error"></div>
+                <div class="done"></div>
+            </div>
+            <br>
+            <div class="inputcontrol">
+                <label>Password2</label>
+                <input type="password" class="SInput" id="password2" placeholder="password2">
+                <div class="error"></div>
+                <div class="done"></div>
+            </div>
+            <br>
+            <input type="submit" class="join" value="join now">
+        </form>
+    </div>
+
+    <script src="signUp.js"></script>
+    
+</body>
+</html>
