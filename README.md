@@ -25,6 +25,12 @@ This page features all available products. When a product is clicked, it is adde
 
 ![image](https://github.com/user-attachments/assets/8ad9efe4-737d-4b1f-950a-4697c0d74a5e)
 
+
+#
+# dark mode and card counter
+![image](https://github.com/user-attachments/assets/2fc39f2b-6924-4c69-8206-939145c6b8f8)
+
+
 # payment card
 The payment card page contains information necessary for purchasing products.
 
